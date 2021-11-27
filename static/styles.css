@@ -1,0 +1,32 @@
+.completed{
+    background-color: #eeeeee;
+}
+.not-completed{
+    background-color:white;
+}
+.completed,.not-completed{
+    border: 1px solid silver;
+    border-radius:0.25rem;
+    padding:10px;
+    margin:10px;
+}
+.completed h3,.completed p
+{
+    text-decoration:line-through;
+}
+body{
+    background-color: #fafafa;
+}
+
+.completed,.not-completed p
+{
+    color:gray;
+    font-size:0.7rem;
+}
+#deleteName{
+    color:#fe6993;
+    background-color:rgba(254,105,147,0.1);
+    border-radius:3px;
+    padding:0.2em;
+    line-height:2em;
+}

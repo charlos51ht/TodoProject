@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block body %}
+    <div class="card">
+        <div class="card-header">
+            Update Task
+        </div>
+        <div class="card-body">
+            <form method="post">
+                {% csrf_token %}
+                <div class="row">
+                        <div class="col-9">
+                            {{ form.task_name.label }}
+                            {{ form.task_name}}
+                        </div>
+                        <div class="col-3">
+                                {{ form.completed.label }}
+                            <div class="form-check form-switch">
+                                {{ form.completed }}
+                            </div>
+                        </div>
+                </div><p></p>
+                <a class="btn btn-info" href="{% url 'index' %}"><-Go Back</a>
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+        </div>
+    </div>
+{%  endblock %}
